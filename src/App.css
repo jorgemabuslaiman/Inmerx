@@ -1,0 +1,58 @@
+
+body {
+  background-color: #d2edd6;
+}
+
+/* Textos generales fuera del navbar */
+html, body, #root, .App {
+  color: #0d5191;
+}
+
+/* Navbar estilos personalizados */
+.custom-navbar {
+  min-height: 80px;
+  background-color: #19425e !important;
+}
+.custom-navbar .navbar-nav .nav-link,
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+  color: #a6b7aa !important;
+}
+.custom-navbar .navbar-nav .nav-link.active,
+.custom-navbar .navbar-nav .nav-link:focus,
+.custom-navbar .navbar-nav .nav-link:hover {
+  color: #0d5191 !important;
+  background-color: #a6b7aa22 !important;
+  text-shadow: 0 1px 2px #0002;
+}
+
+.navbar-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 auto;
+}
+
+.logo-img {
+  height: 56px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.nav-side {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+@media (max-width: 991px) {
+  .navbar-logo {
+    margin: 1rem 0;
+  }
+  .nav-side {
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+  }
+}
